@@ -47,8 +47,8 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, sigue estos
 
 ## Autor
 
-Desarrollado por Mauro Heinrich.
+Desarrollado por [Mauro Heinrich](https://www.linkedin.com/in/mauroheinrich/).
 
 ## Contacto
 
-Si tienes preguntas o sugerencias sobre este proyecto, contáctame por correo electrónico: tucorreo@example.com.
+Si tienes preguntas o sugerencias sobre este proyecto, contáctame por correo electrónico: heinrichmauro@gmail.com
