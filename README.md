@@ -46,7 +46,7 @@ El código fuente del proyecto está organizado en paquetes según las capas men
 
 ## Autor
 
-Desarrollado por [Tu Nombre](https://www.linkedin.com/in/tu-perfil-de-linkedin/).
+Desarrollado por [Mauro Heinrich](https://www.linkedin.com/in/mauroheinrich/).
 
 ## Contacto
 
