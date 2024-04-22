@@ -1,54 +1,53 @@
-# Peluquería Canina
+# Sistema de Peluquería Canina
 
-Este es un sistema de gestión para una peluquería canina desarrollado en Java, utilizando tecnologías como JPA para la persistencia de datos y MySQL como base de datos. La interfaz gráfica de usuario se ha implementado con JFrame.
+Este proyecto es un sistema de gestión para una peluquería canina, organizado en tres capas distintas: interfaz gráfica (GUI), lógica de negocio y persistencia de datos.
 
-## Funcionalidades
+## Estructura del Proyecto
 
-- **Registro de Mascotas**: Permite registrar información de mascotas, incluyendo nombre, dueño, raza, entre otros datos.
-  
-- **Listado y Visualización**: Permite visualizar todas las mascotas registradas junto con sus detalles.
-  
-- **Edición y Eliminación**: Permite editar la información de las mascotas existentes o eliminarlas del sistema.
+El proyecto está dividido en las siguientes capas:
+
+1. **Capa de Interfaz Gráfica (GUI)**:
+   - La capa GUI contiene la interfaz de usuario desarrollada con JFrame para permitir a los usuarios interactuar con el sistema de manera visual. Aquí se manejan las acciones del usuario, como el registro de mascotas, la visualización de datos y la interacción con la capa de lógica.
+
+2. **Capa de Lógica de Negocio**:
+   - La capa de lógica de negocio contiene la funcionalidad principal del sistema. Aquí se implementan las reglas de negocio, la lógica de procesamiento y la manipulación de datos recibidos de la capa de interfaz. Esta capa coordina las operaciones y la lógica detrás de las acciones del usuario.
+
+3. **Capa de Persistencia**:
+   - La capa de persistencia se encarga de la conexión con la base de datos MySQL y la gestión de la persistencia de datos. Utiliza tecnologías como JPA (Java Persistence API) para mapear objetos Java a entidades de la base de datos y realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en la base de datos.
 
 ## Tecnologías Utilizadas
 
 - Java
+- JFrame (para la interfaz gráfica)
 - Java Persistence API (JPA)
-- MySQL
-- JFrame (Interfaz Gráfica de Usuario)
-
-## Estructura del Proyecto
-
-El proyecto está estructurado de la siguiente manera:
-
-- `src/`: Contiene el código fuente del proyecto.
-- `lib/`: Contiene las bibliotecas externas utilizadas.
-- `sql/`: Contiene scripts SQL para la creación de la base de datos.
+- MySQL (como base de datos relacional)
 
 ## Uso
 
 1. **Configuración del Proyecto**:
-   - Importa el proyecto en NetBeans u otro IDE compatible con Java.
-   - Configura la conexión a la base de datos MySQL modificando `persistence.xml`.
+   - Clona este repositorio en tu entorno de desarrollo (por ejemplo, NetBeans).
+   - Configura la conexión a la base de datos MySQL en el archivo `persistence.xml`.
 
 2. **Ejecución**:
-   - Ejecuta la aplicación desde el IDE.
-   - Utiliza la interfaz gráfica para registrar, listar, editar o eliminar mascotas.
+   - Compila y ejecuta el proyecto desde tu IDE.
+   - Utiliza la interfaz gráfica para registrar, visualizar, editar y eliminar datos de mascotas.
+
+## Estructura del Código Fuente
+
+El código fuente del proyecto está organizado en paquetes según las capas mencionadas:
+
+- `gui/`: Contiene las clases relacionadas con la interfaz gráfica.
+- `logica/`: Contiene las clases que implementan la lógica de negocio.
+- `persistencia/`: Contiene las clases para la persistencia de datos utilizando JPA.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Agrega nueva característica'`).
-4. Sube los cambios a tu fork (`git push origin feature/nueva-caracteristica`).
-5. Crea un nuevo Pull Request.
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, siéntete libre de hacer un fork y enviar un pull request con tus mejoras.
 
 ## Autor
 
-Desarrollado por [Mauro Heinrich](https://www.linkedin.com/in/mauroheinrich/).
+Desarrollado por [Tu Nombre](https://www.linkedin.com/in/tu-perfil-de-linkedin/).
 
 ## Contacto
 
-Si tienes preguntas o sugerencias sobre este proyecto, contáctame por correo electrónico: heinrichmauro@gmail.com
+Si tienes preguntas o sugerencias sobre este proyecto, no dudes en contactarme por correo electrónico: heinrichmauro@gmail.com
