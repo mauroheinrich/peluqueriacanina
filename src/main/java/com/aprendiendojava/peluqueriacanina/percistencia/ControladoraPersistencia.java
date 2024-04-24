@@ -3,9 +3,13 @@ package com.aprendiendojava.peluqueriacanina.percistencia;
 
 import com.aprendiendojava.peluqueriacanina.logica.Duenio;
 import com.aprendiendojava.peluqueriacanina.logica.Mascota;
+import com.aprendiendojava.peluqueriacanina.percistencia.exceptions.NonexistentEntityException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
-public class ControladoraPercistencia {
+public class ControladoraPersistencia {
     // Crear instancias de los controladores utilizando new
     DuenioJpaController duenioJpa = new DuenioJpaController();
     MascotaJpaController mascotaJpa = new MascotaJpaController();
@@ -14,5 +18,19 @@ public class ControladoraPercistencia {
     public void guardar(Duenio duenio, Mascota mascota) {
         duenioJpa.create(duenio);   // Crear el dueño en la base de datos
         mascotaJpa.create(mascota); // Crear la mascota en la base de datos
+    }
+
+    public List<Mascota> traerMascotas() {
+        return mascotaJpa.findMascotaEntities();
+    }
+
+    public void borrarMascota(int num_cliente) {
+        try {
+            mascotaJpa.destroy(num_cliente); 
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+       
     }
 }

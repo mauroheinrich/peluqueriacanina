@@ -12,28 +12,33 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnCargaDatos = new javax.swing.JButton();
+        btnVerDatos = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jButton1.setText("CARGAR DATOS");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCargaDatos.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        btnCargaDatos.setText("CARGAR DATOS");
+        btnCargaDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCargaDatosActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jButton2.setText("VER DATOS");
+        btnVerDatos.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        btnVerDatos.setText("VER DATOS");
+        btnVerDatos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerDatosActionPerformed(evt);
+            }
+        });
 
-        jButton3.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jButton3.setText("SALIR");
+        btnSalir.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        btnSalir.setText("SALIR");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -42,20 +47,20 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCargaDatos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnVerDatos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(63, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(52, 52, 52)
-                .addComponent(jButton1)
+                .addComponent(btnCargaDatos)
                 .addGap(60, 60, 60)
-                .addComponent(jButton2)
+                .addComponent(btnVerDatos)
                 .addGap(55, 55, 55)
-                .addComponent(jButton3)
+                .addComponent(btnSalir)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -110,18 +115,23 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCargaDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargaDatosActionPerformed
     CargaDatos pantalla = new CargaDatos();
     pantalla.setVisible(true);
     pantalla.setLocationRelativeTo(null);
-// TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCargaDatosActionPerformed
+
+    private void btnVerDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDatosActionPerformed
+    VerDatos pantalla = new VerDatos();
+    pantalla.setVisible(true);
+    pantalla.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnVerDatosActionPerformed
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnCargaDatos;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnVerDatos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel4;

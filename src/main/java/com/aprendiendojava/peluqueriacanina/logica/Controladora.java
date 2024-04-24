@@ -1,13 +1,14 @@
 
 package com.aprendiendojava.peluqueriacanina.logica;
 
-import com.aprendiendojava.peluqueriacanina.percistencia.ControladoraPercistencia;
+import com.aprendiendojava.peluqueriacanina.percistencia.ControladoraPersistencia;
+import java.util.List;
 
 
 
 
 public class Controladora {
-    ControladoraPercistencia ControlPersis = new ControladoraPercistencia();
+    ControladoraPersistencia ControlPersis = new ControladoraPersistencia();
 
     public void guardar(String nombreMasco, String raza, String color,
             String observaciones, String alergico, String atencionEspecial,
@@ -27,6 +28,14 @@ public class Controladora {
        
        ControlPersis.guardar(duenio, mascota);
        
+    }
+
+    public List<Mascota> traerMascotas() {
+        return ControlPersis.traerMascotas();
+    }
+
+    public void borrarMascotas(int num_cliente) {
+        ControlPersis.borrarMascota(num_cliente);
     }
 
  
