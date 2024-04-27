@@ -38,5 +38,40 @@ public class Controladora {
         ControlPersis.borrarMascota(num_cliente);
     }
 
+    public Mascota traerMascota(int num_cliente) {
+      return ControlPersis.traerMascota(num_cliente);
+    
+    }
+
+    public void modificarMascota(Mascota masco, String nombreMasco,
+            String raza, String color, String observaciones, String alergico,
+            String atencionEspecial, String nombreDuenio, String celDuenio) {
+        
+       masco.setNombre(nombreMasco);
+       masco.setRaza(raza);
+       masco.setColor(color);
+       masco.setObservaciones(observaciones);
+       masco.setAlergico(alergico);
+       masco.setAtencion_especial(atencionEspecial);
+       //modifico mascota
+       ControlPersis.modificarMascota(masco);
+        //setear nuevos valores del dueño
+       Duenio dueno = this.buscarDuenio(masco.getUnDuenio().getId_duenio());
+       dueno.setCelDuenio(celDuenio);
+       dueno.setNombre(nombreDuenio);
+       
+       this.modificarDuenio(dueno);
+    }
+
+    private Duenio buscarDuenio(int id_duenio) {
+        return ControlPersis.traerDuenio(id_duenio);
+    }
+
+    private void modificarDuenio(Duenio dueno) {
+        ControlPersis.modificarDuenio(dueno);
+    }
+
+  
+   
  
 }
