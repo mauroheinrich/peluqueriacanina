@@ -30,6 +30,7 @@ public class VerDatos extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btnEliminar = new javax.swing.JButton();
         btnEditar = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -59,17 +60,25 @@ public class VerDatos extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
         jLabel2.setText("Datos de Mascotas");
 
-        btnEliminar.setIcon(new javax.swing.ImageIcon("C:\\Users\\MAURO\\Downloads\\PELUQUERICANINCA\\btneliminar.png")); // NOI18N
+        btnEliminar.setIcon(new javax.swing.ImageIcon("C:\\Proyectos Java\\peluqueriacanina\\src\\main\\java\\com\\aprendiendojava\\peluqueriacanina\\igu\\imagenes\\imgEliminar.png")); // NOI18N
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarActionPerformed(evt);
             }
         });
 
-        btnEditar.setIcon(new javax.swing.ImageIcon("C:\\Users\\MAURO\\Downloads\\PELUQUERICANINCA\\btneditar.png")); // NOI18N
+        btnEditar.setIcon(new javax.swing.ImageIcon("C:\\Proyectos Java\\peluqueriacanina\\src\\main\\java\\com\\aprendiendojava\\peluqueriacanina\\igu\\imagenes\\imgEditar.png")); // NOI18N
         btnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEditarActionPerformed(evt);
+            }
+        });
+
+        btnVolver.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        btnVolver.setIcon(new javax.swing.ImageIcon("C:\\Proyectos Java\\peluqueriacanina\\src\\main\\java\\com\\aprendiendojava\\peluqueriacanina\\igu\\imagenes\\imgVolver.png")); // NOI18N
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -86,7 +95,8 @@ public class VerDatos extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(103, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -102,6 +112,8 @@ public class VerDatos extends javax.swing.JFrame {
                 .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnVolver)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -200,6 +212,15 @@ public class VerDatos extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        // Crear una instancia de Principal y hacerla visible
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        principal.setLocationRelativeTo(null);
+        // Cerrar la ventana actual
+        this.dispose();
+    }//GEN-LAST:event_btnVolverActionPerformed
    public void mostrarMensaje(String mensaje, String tipo, String titulo){
        JOptionPane optionPane =new JOptionPane(mensaje);
        if(tipo.equals("Info")){
@@ -216,6 +237,7 @@ public class VerDatos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

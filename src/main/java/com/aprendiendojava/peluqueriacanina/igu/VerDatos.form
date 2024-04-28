@@ -99,6 +99,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="btnEliminar" min="-2" pref="61" max="-2" attributes="0"/>
                                   <Component id="btnEditar" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="btnVolver" min="-2" pref="59" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -120,6 +121,8 @@
                       <Component id="btnEliminar" min="-2" pref="57" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnEditar" min="-2" pref="56" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -166,7 +169,7 @@
             <Component class="javax.swing.JButton" name="btnEliminar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\MAURO\Downloads\PELUQUERICANINCA\btneliminar.png"/>
+                  <Image iconType="2" name="C:\Proyectos Java\peluqueriacanina\src\main\java\com\aprendiendojava\peluqueriacanina\igu\imagenes\imgEliminar.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -176,11 +179,24 @@
             <Component class="javax.swing.JButton" name="btnEditar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\MAURO\Downloads\PELUQUERICANINCA\btneditar.png"/>
+                  <Image iconType="2" name="C:\Proyectos Java\peluqueriacanina\src\main\java\com\aprendiendojava\peluqueriacanina\igu\imagenes\imgEditar.png"/>
                 </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnVolver">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tw Cen MT" size="18" style="0"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Proyectos Java\peluqueriacanina\src\main\java\com\aprendiendojava\peluqueriacanina\igu\imagenes\imgVolver.png"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVolverActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

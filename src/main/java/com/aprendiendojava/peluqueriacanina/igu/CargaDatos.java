@@ -38,14 +38,14 @@ public class CargaDatos extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         btnGuardar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tw Cen MT", 0, 48)); // NOI18N
         jLabel1.setText("CARGA DE DATOS");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\MAURO\\Downloads\\PELUQUERICANINCA\\PERRO.png")); // NOI18N
-        jLabel2.setText("jLabel2");
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Proyectos Java\\peluqueriacanina\\src\\main\\java\\com\\aprendiendojava\\peluqueriacanina\\igu\\imagenes\\perros logo.png")); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
         jLabel3.setText("COLOR:");
@@ -168,7 +168,7 @@ public class CargaDatos extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
-                                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 17, Short.MAX_VALUE))
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 17, Short.MAX_VALUE))
                             .addComponent(cmbAtencionEspecial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(26, 26, 26)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,7 +201,8 @@ public class CargaDatos extends javax.swing.JFrame {
         jLabel5.setText("RAZA");
 
         btnGuardar.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        btnGuardar.setText("GUARDAR");
+        btnGuardar.setIcon(new javax.swing.ImageIcon("C:\\Proyectos Java\\peluqueriacanina\\src\\main\\java\\com\\aprendiendojava\\peluqueriacanina\\igu\\imagenes\\imgGuardar.png")); // NOI18N
+        btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
@@ -209,10 +210,20 @@ public class CargaDatos extends javax.swing.JFrame {
         });
 
         btnLimpiar.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        btnLimpiar.setText("LIMIPAR");
+        btnLimpiar.setIcon(new javax.swing.ImageIcon("C:\\Proyectos Java\\peluqueriacanina\\src\\main\\java\\com\\aprendiendojava\\peluqueriacanina\\igu\\imagenes\\imgLimpiar.png")); // NOI18N
+        btnLimpiar.setText("Limpiar");
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLimpiarActionPerformed(evt);
+            }
+        });
+
+        btnVolver.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        btnVolver.setIcon(new javax.swing.ImageIcon("C:\\Proyectos Java\\peluqueriacanina\\src\\main\\java\\com\\aprendiendojava\\peluqueriacanina\\igu\\imagenes\\imgVolver.png")); // NOI18N
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -223,9 +234,11 @@ public class CargaDatos extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(btnLimpiar)
-                .addGap(186, 186, 186)
+                .addGap(78, 78, 78)
                 .addComponent(btnGuardar)
-                .addGap(244, 244, 244))
+                .addGap(44, 44, 44)
+                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -248,11 +261,13 @@ public class CargaDatos extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnGuardar))
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(235, 235, 235)
@@ -316,11 +331,21 @@ public class CargaDatos extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnGuardarActionPerformed
 
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        // Crear una instancia de Principal y hacerla visible
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        principal.setLocationRelativeTo(null);
+        // Cerrar la ventana actual
+        this.dispose();
+    }//GEN-LAST:event_btnVolverActionPerformed
+
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnLimpiar;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JComboBox<String> cmbAlergico;
     private javax.swing.JComboBox<String> cmbAtencionEspecial;
     private javax.swing.JLabel jLabel1;
